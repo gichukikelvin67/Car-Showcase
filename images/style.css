@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-black: #0a0a0a;
+    --bg-dark-gray: #121212;
+    --text-white: #ffffff;
+    --text-muted: #8a8a8a;
+    --accent-gold: #c5a880;
+    --accent-gold-hover: #e0caaa;
+    --transition-smooth: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+body{
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow-x: hidden;
+}
+.text-accent{
+    color: var(--acent-gold);
+}
+.small-tracking{
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+.tracking-wide{
+    letter-spacing: 4px;
+}
+.custom-navbar{
+    background-color: rgba(10,10, 10, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #1a1a1a;
+    padding: 1.2rem 0;
+    transition: var(--transition-smooth);
+}
+.custom-navbar .navbar-brand{
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.custom-navbar .nav-link{
+    color: var(--text-muted) !important;
+    font-size: 0.9rem;
+    text-uppercase: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: var(--transition-smooth);
+}
+.custom-navbar .navbar-link:hover,
+.custom-navbar .nav-link.active{
+    color: var(--transition-smooth) !important;
+}
+.custom-toggler{
+    border: none;
+    padding: 0;
+} 
+.custom-toggler:focus{
+    box-shadow: none;
+}
+.hero-section{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(10, 10,10, 1)),
+    url('https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=1920') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 100px;
+}
+.btn-luxury{
+    background-color: var(--accent-gold);
+    color: #000;
+    font-weight: 600;
+    text-uppercase: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    padding: 30px;
+    transition: var(--transition-smooth);
+}
