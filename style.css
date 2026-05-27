@@ -17,8 +17,8 @@ body{
 }
 
 .custom-navbar{
-    background: rgba(0,0,0,0.92) !important;
-    backdrop-filter: blur(12px);
+    background: rgba(0,0,0,0.7) !important;
+    backdrop-filter: blur(10px);
     padding: 18px 0;
     border-bottom: 1px solid rgba(255,255,255,0.08);
     animation: slideDown 0.8s ease forwards;
@@ -179,7 +179,7 @@ body{
 }
 
 .car-card:hover{
-    transform: translateY(-12px);
+    transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(212,175,55,0.15);
 }
 
@@ -258,7 +258,7 @@ footer h6{
 
 .social-icon-link:hover{
     color: #000;
-    background: #d4af37;
+    background: #e2e1dd;
 }
 
 @media(max-width:992px){
@@ -326,4 +326,31 @@ footer h6{
     width: 40px;
     border: none;
     height: 40px;
+    position: relative;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bi-instagram,
+.bi-whatsapp{
+    font-size: 24px;
+    margin: 10px;
+    color: white;
+}
+.bi-whatsapp{
+    color: #25D366;
+    font-size: 24px;
+}
+.bi-instagram{
+    color: #C13584;
+    font-size: 24px;
+}.bi-facebook{
+    color: #1877F2;
+    font-size: 22px;
+}
+
+.bi-youtube{
+    color: #FF0000;
+    font-size: 22px;
 }
