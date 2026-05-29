@@ -49,15 +49,27 @@
             </div>
         </div>
     </header>
-    <!--This is the preview feature section-->
+                 <!--This is the preview feature section-->
     <section class="preview-section py-5">
         <div class="container py-5">
             <div class="row align-items-center g-5">
+                <!--LEFT SIDE IMAGE-->
                 <div class="col-md-6">
-                    <div class="image-wrapper">
-                        <img src="images/814940495119342945.jfif" alt="sleek hypercar profile" class="image-fluid custom-img">
+                    <!--main preview image-->
+                    <div class="image-wrapper mb-3">
+                        <img id="maincarimage" src="images/814940495119342945.jfif" alt="sleek hypercar profile" class="image-fluid custom-img" rounded-4>
                     </div>
+                    <!--Thumbnail Images-->
+                <div class="d-flex gap-3 thumbnail-gallery">
+                    <img src="images/2027 Brabus BODO _ DailyRevs__The Brabus BODO is….jfif" class="thumb-img active-thumb"
+                    onclick="changeimage(this)">
+                    <img src="images/680747299969892757.jfif" class="thumb-img"
+                    onclick="changeimage(this)">
+                    <img src="images/Power, geometry, motion___This is the Mercedes-AMG….jfif" class="thumb-img"
+                    onclick="changeimage(this)">
                 </div>
+                </div>
+                <!--RIGHT SIDE CONTENT-->
                 <div class="col-md-6">
                     <span class="text-accent text-uppercase small-tracking">Featured Masterpiece</span>
                     <h2 class="text-white display-5 fw-semibold my-3">Aero Dynamics, Defined</h2>
